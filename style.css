@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+/*     font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif; */
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --vry-drk-blue: hsl(212, 21%, 14%);
+  --drk-grey-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --font-size: 0.875em;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size);
+  background-color: var(--cream);
+  font-family: "Fraunces", serif;
+}
+
+.img {
+  background-image: url(./images/image-product-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 5% 5% 0 0;
+  height: 15rem;
+  width: 21.5rem;
+  margin-top: 4rem;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 0 0 5% 5%;
+  width: 21.5rem;
+  height: auto;
+  padding: 1rem;
+}
+
+.sub-head {
+  color: var(--drk-grey-blue);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 0.875em;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
+}
+
+.head {
+  font-size: 2.1em;
+  font-weight: 700;
+}
+
+.paragraph {
+  color: var(--drk-grey-blue);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3rem;
+  margin: 1rem 0;
+  letter-spacing: 0.4px;
+  font-size: 1em;
+  font-weight: 500;
+  width: 20rem;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-around;
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+
+.sale-price {
+  color: var(--dark-cyan);
+  font-size: 2.2em;
+}
+
+.org-price {
+  color: var(--drk-grey-blue);
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+  margin: 0.7rem;
+  padding-left: 0.7rem;
+}
+
+.btn {
+  width: 21.5rem;
+  height: 3rem;
+}
+
+button {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  border: none;
+  width: 19rem;
+  height: 2.7rem;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+
+span img {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (min-width: 750px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .img {
+  background-image: url(./images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 5% 0 0 5%;
+  height: 28rem;
+  width: 18.5rem;
+  margin-top: 5rem;
+}
+.card {
+    height: 28rem;
+    width: 18;
+    border-radius: 0 5% 5% 0;
+   margin-top: 5rem;
+}
+
+.sub-head {
+    margin-left: 1rem;
+}
+.head {
+    width: 15rem; 
+    font-size: 2.5em; 
+    margin-left: 1rem;
+}
+.paragraph {
+    margin-left: 1rem;
+    width: 18rem;
+    margin-bottom: 1.5rem;
+}
+.prices {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+button {
+    height: 3rem;
+}
+button:hover {
+    cursor: pointer;
+    background-color: hsl(156, 36%, 15%);
+}
+
+}
